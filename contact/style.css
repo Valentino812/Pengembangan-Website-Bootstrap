@@ -1,0 +1,213 @@
+/* General Start */
+html, body {
+    font-family: 'Verdana', sans-serif !important;
+    background-color: #11191f !important;
+}
+/* General End */
+
+/* Entrance Transition Start */
+.fade-in {
+    opacity: 0 !important;
+    transform: translateY(4px) !important; 
+    transition: opacity 1s ease-out, transform 1s ease-out !important;
+    will-change: opacity, transform !important;
+}
+
+/* Active state for fade-in after transition (used in the javascript for entrance animation) */
+.fade-in.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important; 
+}
+/* Entrance Transition End */
+
+/* Navbar Start */
+.navbar-toggler {
+    background-color: #bbc6ce;
+    transition: background-color 0.2s ease-out
+}
+
+.navbar-toggler:hover {
+    background-color: #1095c1;
+}
+
+.navbar {
+    padding: 10px 15px; 
+}
+
+.navbar-brand {
+    color: #bbc6ce;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #1AB3E6 !important;
+}
+
+.navbar-nav .nav-page a {
+    font-size: 21px;
+    color: #1AB3E6 !important;
+    transition: font-size 0.3s ease;
+}
+
+.navbar-nav .nav-page a:hover {
+    font-size: 23px;
+}
+
+.navbar-nav .sub-button a {
+    color: #FEFFFF !important;
+}
+
+.navbar-nav .sub-button a:hover {
+    background-color:#1095c1 !important;
+}
+
+.social-icons a {
+    color: #FEFFFF; 
+    margin-left: 15px; 
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #1AB3E6; 
+}
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.contact-form-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button {
+    background-color:#1095c1;
+    font-size: 20px;
+}
+
+.image-hero {
+    padding-top: 12px;
+    align-items: flex-start !important;
+}
+
+.contact-image {
+    width: 100%;
+}
+
+/* Hero End */
+
+/* Wave Start */
+.wave-container {
+    background-color: #FEFFFF;
+}
+/* Wave End */
+
+/* Form and History Start */
+.form-story-container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: #FEFFFF;
+}
+/* Form and History End */
+
+/* Sub Form Start */
+.sub-form {
+    background-color: #141e26;
+    border-radius: 10px;
+    padding: 80px;
+}
+
+.sub-form h2{
+    font-size: 33px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-form h3{
+    font-size: 22px;
+    font-weight: normal;
+    color: #72828c;
+}
+
+.subscribe-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+/* Sub Form End */
+
+/* Footer Start */
+.footer-title {
+    font-size: 24px;
+}
+
+.footer-social {
+    padding-left: 40px;
+}
+
+.copyright-text {
+    font-size: 16px;
+    color:#72828c;
+}
+/* Footer End */
+
+/* Contact Modal Start */
+#contactModalLabel {
+    color:#141e26;
+}
+/* Contact Modal End */
+
+/* Subscribed Modal Start */
+#subscribedModalLabel {
+    color:#141e26;
+}
+
+.modal-body {
+    color:#72828c;
+}
+/* Subscribed Modal End */
+
+/* Changes For Smaller Screen */
+@media (max-width: 768px) {
+    /* Navbar Start */
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .navbar-collapse {
+        background-color: #141e26;
+        border-radius: 8px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-nav .sub-button a {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 34px;
+    }
+
+    .navbar-nav .nav-page a {
+        font-size: 22px;
+    }
+    
+    .navbar-nav .nav-page a:hover {
+        font-size: 23px;
+    }
+    /* Navbar End */
+
+    /* Hero Start */
+    .image-hero {
+        padding-top: 28px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    /* Hero End */
+
+    /* Footer Start */
+    .footer-social {
+        padding-left: 10px;
+    }
+    /* Footer End */
+}
+

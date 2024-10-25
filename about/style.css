@@ -1,0 +1,276 @@
+/* General Start */
+html, body {
+    font-family: 'Verdana', sans-serif !important;
+    background-color: #3AAFA9 !important;
+}
+/* General End */
+
+/* Custom font for small texts */
+.custom-font {
+    font-family: 'Merriweather', serif;
+}
+
+/* Entrance Transition Start */
+.fade-in {
+    opacity: 0 !important;
+    transform: translateY(4px) !important; 
+    transition: opacity 1s ease-out, transform 1s ease-out !important;
+    will-change: opacity, transform !important;
+}
+
+/* Active state for fade-in after transition (used in the javascript for entrance animation) */
+.fade-in.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important; 
+}
+/* Entrance Transition End */
+
+/* Navbar Start */
+.navbar-toggler {
+    transition: background-color 0.2s ease-out;
+}
+
+.navbar-toggler:hover {
+    background-color: #2B7A78;
+}
+
+.navbar {
+    padding: 10px 15px; 
+}
+
+.navbar-brand {
+    color: #FEFFFF;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #2B7A78 !important;
+}
+
+.navbar-nav .nav-page a {
+    font-size: 21px;
+    color: #FEFFFF !important;
+    transition: font-size 0.3s ease;
+}
+
+.navbar-nav .nav-page a:hover {
+    font-size: 23px;
+}
+
+.navbar-nav .sub-button a {
+    color: #FEFFFF !important;
+    background-color: transparent !important;
+    border-color: #2B7A78 !important;
+    border-width: 2px !important;
+}
+
+.navbar-nav .sub-button a:hover {
+    background-color:#2B7A78 !important;
+}
+
+.social-icons a {
+    color: #FEFFFF; 
+    margin-left: 15px; 
+    transition: color 0.3s ease; 
+}
+
+.social-icons a:hover {
+    color: #2B7A78; 
+}
+/* Navbar End */
+
+/* Hero Start */
+.hero {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.hero .row .hero-contents h2 {
+    font-size: 38px;
+    color: #FEFFFF; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero .row .hero-contents h3 {
+    color: #2B7A78;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.hero .row .hero-contents p {
+    font-size: 22px;
+    color: #17252A;
+}
+
+.hero .row .hero-contents .big-h3{
+    font-size: 33px;
+    font-weight: bold;
+    color: #FEFFFF; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#heroCarousel .carousel-item img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+.source-link {
+    color:#2B7A78;
+}
+/* Hero End */
+
+/* Wave Start */
+.wave-container {
+    background-color: #FEFFFF;
+}
+/* Wave End */
+
+/* Form and Card Start */
+.form-card-container {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: #FEFFFF;
+}
+/* Form and Card End */
+
+/* Sub Form Start */
+.sub-form {
+    background-color: #141e26;
+    border-radius: 10px;
+    padding: 80px;
+}
+
+.sub-form h2{
+    font-size: 33px;
+    color: #FEFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-form h3{
+    font-size: 22px;
+    font-weight: normal;
+    color: #72828c;
+}
+
+.subscribe-button {
+    background-color: #3AAFA9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    color:#FEFFFF;
+    transition: background-color 0.2s ease-out;
+    border:none;
+}
+
+.subscribe-button:hover {
+    background-color: #56CCC5;
+}
+/* Sub Form End */
+  
+/* Story Start */
+.story-title {
+    color:#141e26;
+    font-weight:600;
+    font-size: 30px;
+}
+
+.card-button {
+    background-color: #3AAFA9;
+    transition: background-color 0.2s ease-out;
+    border:none;
+}
+
+.card-button:hover {
+    background-color: #56CCC5;
+}
+
+#cardLabel {
+    color:#141e26;
+}
+
+.story-card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.4s ease-in-out; 
+}
+
+/* Story End */
+
+/* Footer Start */
+.footer-title {
+    font-size: 24px;
+}
+
+.footer-social {
+    padding-left: 40px;
+}
+
+.copyright-text {
+    font-size: 16px;
+    color:#72828c;
+}
+/* Footer End */
+
+/* Subscribed Modal Start */
+#subscribedModalLabel {
+    color:#141e26;
+}
+
+.modal-body {
+    color:#72828c;
+}
+/* Subscribed Modal End */
+
+/* Changes For Smaller Screen */
+@media (max-width: 768px) {
+    /* Navbar Start */
+    .navbar {
+        padding: 5px 10px;
+    }
+
+    .navbar-collapse {
+        background-color: #2B7A78;
+        border-radius: 8px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-nav .sub-button a {
+        font-size: 20px;
+    }
+
+    .navbar-brand {
+        font-size: 34px;
+    }
+
+    .navbar-nav .nav-page a {
+        font-size: 22px;
+    }
+    
+    .navbar-nav .nav-page a:hover {
+        font-size: 23px;
+    }
+    /* Navbar End */
+
+    /* Hero Start */
+    .hero .row .hero-contents h2 {
+        font-size: 32px;
+        color: #FEFFFF
+    }
+    
+    .hero .row .hero-contents h3 {
+        color: #738287;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    
+    .hero .row .hero-contents .big-h3{
+        font-size: 29px;
+        font-weight: bold;
+        color: #FEFFFF
+    }
+    /* Hero End */
+
+    /* Footer Start */
+    .footer-social {
+        padding-left: 10px;
+    }
+    /* Footer End */
+}

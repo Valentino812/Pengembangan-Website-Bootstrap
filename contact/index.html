@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact - Lifestyle Vibes</title>
+
+    <!-- Boostrap 5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+
+    <!-- Personal Costum CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQuery script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-md fade-in">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between w-100">
+                <a class="navbar-brand" href="../index.html">Lifestyle Vibes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="mx-auto">
+                    <ul class="navbar-nav justify-content-center mb-2 mb-lg-0">
+                        <li class="nav-item nav-page">
+                            <a class="nav-link active page-button" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-page">
+                            <a class="nav-link active page-button" aria-current="page" href="../about/index.html">About</a>
+                        </li>
+                        <li class="nav-item nav-page">
+                            <a class="nav-link active page-button" aria-current="page" href="../contact/index.html">Contact</a>
+                        </li>
+                        <li class="nav-item sub-button">
+                            <a class="nav-link active" aria-current="page" href="#subscribe" role="button">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-icons d-flex align-items-center">
+                    <a href="#" target="_blank" class="bi bi-twitter" aria-label="Twitter"></a>
+                    <a href="#" target="_blank" class="bi bi-instagram" aria-label="Instagram"></a>
+                    <a href="#" target="_blank" class="bi bi-facebook" aria-label="Facebook"></a>
+                </div>
+            </div>
+        </div>
+      </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container hero fade-in px-4 px-sm-0 px-md-0 px-lg-0">
+        <div class="row">
+            <!-- Image Section -->
+            <div class="image-hero col-12 col-md-4 d-none d-md-flex justify-content-center align-items-center">
+                <img src="../assets/contact.jpg" alt="Contact Image" class="contact-image img-fluid rounded" style="max-width: 100%; height: auto;">
+            </div>
+
+            <!-- Form Section -->
+            <div class="col-12 col-md-8">
+                <div class="contactForm" id="contactForm">
+                    <div class="contactForm-content">
+                        <h2 class="contact-form-title">Contact Us</h2>
+                        <p>Get in touch with our team. We'd love to hear from you!</p>
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label for="first-name">First Name (Required)</label>
+                                    <input type="text" class="form-control" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="form-group col-12 col-md-6">
+                                    <label for="last-name">Last Name (Required)</label>
+                                    <input type="text" class="form-control" id="last-name" name="last-name" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Work Email (Required)</label>
+                                <input type="email" class="form-control" id="contact-email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message (Required)</label>
+                                <textarea class="form-control" id="message" name="message" required></textarea>
+                            </div>
+
+                            <div class="row d-flex justify-content-start">
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-primary submit-button">Send</button>     
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Wave Effect Start -->
+    <div class="container-fluid wave-container fade-in">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#11191f " fill-opacity="1" d="M0,160L0,160L180,160L180,96L360,96L360,160L540,160L540,224L720,224L720,192L900,192L900,192L1080,192L1080,224L1260,224L1260,192L1440,192L1440,0L1260,0L1260,0L1080,0L1080,0L900,0L900,0L720,0L720,0L540,0L540,0L360,0L360,0L180,0L180,0L0,0L0,0Z"></path></svg>
+    </div>
+    <!-- Wave Effect End -->
+
+    <!-- Sub Form Container Start -->
+    <div class="container-fluid form-story-container fade-in" id="subscribe">
+        <!-- Sub Form Start -->
+        <div class="container sub-form">
+            <div class="row g-0">
+                <div class="col-md-6 mb-2">
+                    <h2 class="mb-2">Get Closer To Us</h2>
+                    <h3>Subscribe to know more</h3>
+                </div>
+                <div class="col-md-10">
+                    <form id="subscribeForm" class="grid">
+                    <input
+                      type="text"
+                      id="firstname"
+                      name="firstname"
+                      placeholder="First Name"
+                      aria-label="First Name"
+                      required
+                    />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                      aria-label="Email"
+                      required
+                    />
+                    <button class="subscribe-button" type="submit">
+                      Subscribe
+                    </button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <!-- Sub Form End -->
+    </div>
+    <!-- Sub Form Container End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white py-4 fade-in">
+        <div class="container">
+            <div class="row g-2">
+                <!-- Title Section -->
+                <div class="col-md-4">
+                    <h3 class="footer-title">LifeStyle Vibes</h3>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-md-8 footer-social">
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i> Twitter</a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                    <a href="#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a>
+                </div>
+                <!-- Privacy Policy Section -->
+                <div class="col-md-8 privacy-terms">
+                    <a href="#">Privacy Policy</a> •
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <!-- Copyright Section -->
+                <div class="row mt-4 copyright">
+                    <div class="col text-center">
+                        <p class="mb-0 copyright-text">&copy; 2024 LifeStyle Vibes. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap 5.3.3 Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Personal Costum Js Script -->
+    <script src="script.js"></script>
+  </body>
+    <!-- Subscribed Modal Start -->
+    <div class="modal fade" id="subscribedModal" tabindex="-1" aria-labelledby="subscribedModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscribedModalLabel">Subscribed Successfully</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Thank you for subscribing, welcome to our community!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribed Modal End -->
+
+    <!-- Contact Modal Start -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Your Message Has Been Sent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Thank you for contacting us, we will reach out to you soon!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Modal End -->
+</html>
